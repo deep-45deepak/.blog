@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>.blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="website icon" type="png" href="./Images/.blog.png" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        </style>
+        <script src="script.js"></script>
+</head>
+
+<body class="bg-white font-[Baloo] bg-ghostwhite m-0 p-0">
+
+
+    <!-- Navbar starts here -->
+<nav class="bg-ghostwhite md:py-2 sm:py-0.5 px-6 md:flex md:items-center md:justify-between relative md:pr-20 md:pl-20">
+    <!-- Left Section (Logo & Mobile Menu Button) -->
+    <div class="flex justify-between items-center w-full md:w-auto">
+        <img id="themeImage" src="./Images/logo.png" alt="logo" class="h-12 w-20 rounded-lg" />
+        <!-- search bar for mobile view -->
+        <div class="relative border border-gray-400 rounded-full px-1 flex items-center md:hidden">
+            <input id="S2" type="search" placeholder="Search..."
+                class="w-40 bg-white text-black rounded-full border-none focus:outline-none px-2 py-1" />
+            <button id="S1" class="text-gray-500 px-2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menuToggle" class="text-2xl cursor-pointer md:hidden">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Navigation Menu -->
+    <ul id="navLinks"
+        class="md:flex md:items-center md:space-x-4 absolute md:static bg-ghostwhite w-full left-0 top-[-400px] md:top-0 transition-all ease-in-out duration-500 md:w-auto md:py-0 py-4 md:pl-0 pl-7 shadow-md md:shadow-none z-50 hidden md:block">
+        <li><button class="text-white bg-green-600 px-4 py-1.5 rounded-full md:ml-4 block">Home</button></li>
+        <li class="list"><button id="blogs"
+                class="px-4 py-1.5 rounded-full md:ml-4 hover:bg-green-500 hover:text-white block">Blogs</button>
+        </li>
+        <li class="list"><button id="add"
+                class="px-4 py-1.5 rounded-full md:ml-4 hover:bg-green-500 hover:text-white block">Add</button>
+        </li>
+        <li class="list"><button
+                class=" px-4 py-1.5 rounded-full md:ml-4 hover:bg-green-500 hover:text-white block">Contact</button>
+        </li>
+        <li class="list"><button
+                class=" px-4 py-1.5 rounded-full md:ml-4 hover:bg-green-500 hover:text-white block">About
+                us</button></li>
+
+            </li>
+            <!-- Search Bar -->
+                <div class="relative border border-gray-400 rounded-full px-3 py-1 flex items-center">
+                    <input id="S2" type="search" placeholder="Search..."
+                        class="w-full bg-transparent rounded-full border-none focus:outline-none px-2 py-1" />
+                    <button id="S1" class="px-2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+        <!-- Dark Mode & Login Button -->
+        <button><li class="md:ml-4 mt-4 md:mt-0"><i id="darkMode"
+            class="fa-solid fa-circle-half-stroke cursor-pointer block text-center"></i></li></button>
+        <li class="md:ml-4 mt-4 md:mt-0">
+            <button href="./login/login.html" id="login" class="bg-green-500 text-white px-4 py-1.5 rounded-full block mx-auto">Log In</button>
+        </li>
+    </ul>
+</nav>
+
+
+    <!-- Main section starts here -->
+    <main>
+
+
+        <!-- first main -->
+        <div style="background-color: #04AA6D;"
+            class="flex flex-col items-center justify-between space-y-4 md:space-y-0  p-4 rounded-lg text-center m-4 mt-0">
+            <div class="md:w-1/2 space-y-4">
+                <h1 class="text-4xl font-sans font-bold text-white">Create a blog <br /> worth Sharing.</h1>
+                <p class="text-white text-lg font-sans">Before the digital age, only the privileged few could
+                    consolidate the
+                    resources necessary to start their own business. Starting capital had to be significant, while
+                    outside funding was often scarce unless you had connections with financial and entrepreneurial
+                    know-how.</p>
+                <button
+                    class="bg-white text-green-600 px-4 py-1.5 font-awesome rounded-lg hover:border-2 hover:border-white">
+                    <a href="https://substack.com/" class="no-underline text-green-600">Start Reading</a>
+                </button>
+                <p class="text-white text-lg">In the world of online sales and e-commerce, that is simply no longer the
+                    case as the demand for e-commerce and online businesses has exploded.</p>
+            </div>
+            <div class="md:w-3/4">
+                <img class="rounded-lg mb-4 m-2t"
+                    src="https://www.blogtyrant.com/wp-content/uploads/2021/06/spi-site.png" alt="" />
+            </div>
+        </div>
+
+
+        <!-- Second section starts from here.. -->
+        <div class="mt-8 text-center">
+            <h1 id="typing-heading" class="text-4xl font-bold text-green-600">A beautiful website starts here</h1>
+            <h3 class="text-lg text-green-600">Weebly's powerful drag and drop website builder and guided set up get you
+                to the finish line faster, no coding needed.</h3>
+                <div class="flex flex-wrap justify-center md:space-x-4 md:m-4 sm:m-2">
+                    <a href="#" class="text-white bg-gray-500 px-2 py-2 rounded-lg md:text-sm m-2 hover:bg-gray-400">FEATURE</a>
+                    <a href="#" class="text-white bg-gray-500 px-2 m-2 py-2 rounded-lg text-sm hover:bg-gray-400">PERSONAL BLOGS</a>
+                    <a href="#" class="text-white bg-gray-500 px-2 m-2 py-2 rounded-lg text-sm hover:bg-gray-400">BUSINESS BLOGS</a>
+                    <a href="#" class="text-white bg-gray-500 px-2 m-2 py-2 rounded-lg text-sm hover:bg-gray-400">HEALTH BLOGS</a>
+                    <a href="#" class="text-white bg-gray-500 px-2 m-2 py-2 rounded-lg text-sm hover:bg-gray-400">EVENT BLOGS</a>
+                    <a href="#" class="text-white bg-gray-500 px-2 m-2 py-2 rounded-lg text-sm hover:bg-gray-400">FOOD BLOGS</a>
+                </div>
+
+        <div class="text-gray-900 p-10">
+            <!-- Grid Container -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+                <!-- Card 1 -->
+                <div class="bg-blue-500 text-white p-6 rounded-xl shadow-lg hover:scale-105 transition-transform hover:bg-blue-600">
+                    <h2 class="text-xl font-bold">1️⃣ The Future of AI: What’s Next?</h2>
+                    <p>Artificial Intelligence is evolving at a rapid pace, transforming industries worldwide. From chatBots to self-driving cars, AI is revolutionizing how we live and work. What’s next in this ever-growing field?</p>
+                </div>
+
+                <!-- Card 2 (Larger) -->
+                <div
+                    class="bg-green-500 text-white p-8 rounded-xl shadow-lg sm:col-span-2 hover:scale-105 transition-transform hover:bg-green-600">
+                    <h2 class="text-2xl font-bold">2️⃣ Mastering JavaScript: Essential Tips</h2>
+                    <p>JavaScript is the backbone of web development. Mastering closures, async functions, and ES6+ features can make you a pro. Here are some essential tips to level up your JS skills!
+                        Knowing when to use map(), filter(), and reduce() can simplify your code. Understanding the event loop helps avoid performance issues. Are you ready to become a JS ninja?
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-purple-500 text-white p-6 rounded-xl shadow-lg hover:scale-105 transition-transform hover:bg-purple-900">
+                    <h2 class="text-xl font-bold">3️⃣ Why Dark Mode is Taking Over?</h2>
+                    <p>Dark mode isn't just about aesthetics—it reduces eye strain and saves battery life. Major apps like Twitter and YouTube now support it. Should your website have it too?</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="bg-purple-900 text-white p-6 rounded-xl shadow-lg md:col-span-2 hover:scale-105 transition-transform hover:bg-purple-600">
+                    <h2 class="text-xl font-bold">4️⃣ How to Optimize Website Speed?</h2>
+                    <p>A slow website can drive users away! Optimize images, minify CSS & JS, and use lazy loading to boost performance. Fast-loading sites improve SEO and user experience.
+                        Additionally, enabling caching and using a Content Delivery Network (CDN) can drastically reduce load times. Avoid excessive HTTP requests to enhance efficiency. Speed matters—how fast is your site?
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-yellow-500 text-white p-6 rounded-xl shadow-lg hover:scale-105 transition-transform hover:bg-yellow-600">
+                    <h2 class="text-xl font-bold">5️⃣ Is Python the Best Programming Language?</h2>
+                    <p>Python’s simplicity and vast libraries make it a favorite among developers. From web development to data science, it’s everywhere! But does it truly deserve the top spot?</p>
+                </div>
+
+                <!-- Card 6 (Taller) -->
+                <div
+                    class="bg-blue-400 text-white p-10 rounded-xl shadow-lg sm:row-span-2 hover:scale-105 transition-transform hover:bg-blue-500">
+                    <h2 class="text-2xl font-bold">6️⃣ The Rise of No-Code & Low-Code Platforms</h2>
+                    <p>A good developer relies on the right tools to boost productivity. Code editors like VS Code, GitHub for version control, and Chrome DevTools for debugging are essential.
+                        Frameworks like React and Tailwind CSS speed up UI development. Testing tools like Jest ensure your code works flawlessly. Are you using the best tools for your projects?</p>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="bg-gray-500 text-white p-6 rounded-xl shadow-lg hover:scale-105 transition-transform hover:bg-gray-600">
+                    <h2 class="text-xl font-bold">7️⃣ Cybersecurity: How Safe is Your Data?</h2>
+                    <p>With rising cyber threats, protecting personal and business data is crucial. Strong passwords, two-factor authentication, and encryption are must-haves. Are you secure?</p>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="bg-green-700 text-white p-6 rounded-xl hover:scale-105 transition-transform hover:bg-green-800">
+                    <h2 class="text-xl font-bold">8️⃣ Web3 & The Future of Decentralized Internet</h2>
+                    <p>Blockchain technology is pushing the internet towards decentralization. Web3 promises greater privacy and control, but is it truly the next big thing?</p>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="bg-black text-white p-6 rounded-xl hover:scale-105 transition-transform hover:bg-gray-500">
+                    <h2 class="text-xl font-bold">9️⃣  The Rise of No-Code & Low-Code Platforms</h2>
+                    <p>Building websites and apps without coding is now possible! Tools like WebFlow and Bubble empower non-developers to create software. Are they the future of development?</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container mx-auto p-6 max-w-4xl border-1 border-gray-300 rounded-lg shadow-lg">
+            <h1 class="text-4xl font-extrabold text-center text-gray-800 mb-8">📖 My Blog</h1>
+
+            <!-- Blog Form -->
+            <div class="bg-gray-500 p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-700">Create a New Blog Post</h2>
+
+                <input id="title" type="text" placeholder="Enter Blog Title"
+                    class="w-full p-3 mb-3 border rounded-lg focus:ring-2 focus:ring-blue-400">
+
+                <textarea id="content" rows="4" placeholder="Write your blog..."
+                    class="w-full p-3 mb-3 border rounded-lg focus:ring-2 focus:ring-blue-400"></textarea>
+
+                <input id="image" type="file" accept="image/*"
+                    class="w-full mb-3 border p-2 rounded-lg bg-gray-50 cursor-pointer">
+
+                <button onclick="addBlog()"
+                    class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300">
+                    ➕ Add Blog
+                </button>
+            </div>
+
+            <!-- Blog List -->
+            <div id="blogList" class="mt-6 space-y-6">
+                <!-- Blogs will be added here dynamically -->
+            </div>
+        </div>
+
+
+
+        <!-- Modern Footer -->
+        <footer class="bg-gray-900 text-white py-10 px-10">
+    <button id="goto" class="bg-gray-700 text-white px-4 py-2 rounded mb-4 ">Go to Top</button>
+    <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 md:flex md:items-center md:justify-between">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- Brand & Contact -->
+            <div>
+                <h1 class="text-3xl font-bold text-green-400">.blog</h1>
+                <ul class="mt-3 space-y-2 text-gray-400">
+                    <li>Email: <a href="mailto:dpk.41deep@gmail.com" class="hover:text-blue-300">dpk.41deep@gmail.com</a></li>
+                    <li>Username: <span class="text-green-300">dpk.45deepak</span></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <div>
+                <h2 class="text-lg font-semibold">Get Our Services</h2>
+                <input type="email" placeholder="Enter your email" class="mt-3 px-4 py-2 border rounded w-full bg-gray-800 text-white border-gray-600 focus:border-green-400 focus:ring-1 focus:ring-green-400" />
+                <div class="flex items-center mt-3 text-sm text-gray-400">
+                    <input type="checkbox" id="checkbox" class="mr-2 accent-green-400" />
+                    <label for="checkbox">By subscribing, you confirm you're at least 16 years old.</label>
+                </div>
+                <button type="submit" class="mt-4 w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded-lg transition">Subscribe</button>
+            </div>
+
+            <!-- Social Links -->
+            <div class="md:ml-40">
+                <h3 class="text-lg font-semibold">Follow Us</h3>
+                <div class="mt-3 flex justify-center md:justify-start space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-green-400 transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-green-400 transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-green-400 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-green-400 transition"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+    </div>
+    <div class="mt-8 border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
+        <p>
+            <a href="#" class="hover:text-green-400">Website Terms</a> | 
+            <a href="#" class="hover:text-green-400">Privacy Policy</a> | 
+            <a href="#" class="hover:text-green-400">Accessibility</a> | 
+            <a href="#" class="hover:text-green-400">Do Not Sell My Info</a>
+        </p>
+        <p class="mt-2">&copy; 2025 .blog. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

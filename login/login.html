@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Login</title>
+    <link rel="icon" type="image/png" href="../Images/.blog.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="log-in.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Login Form -->
+      <div class="form-container login" id="logInForm">
+        <h1 class="heading">Log In</h1>
+        <div class="social-icons">
+          <img src="../Images/Google.png" alt="Google" />
+          <img src="../Images/instagram.png" alt="Instagram" />
+          <img src="../Images/facebook.png" alt="Facebook" />
+          <img src="../Images/linkedin.png" alt="LinkedIn" />
+          <img src="../Images/twitter.png" alt="Twitter" />
+        </div>
+        <form id="logInForm">
+          <input type="email" placeholder="Email" id="Email2" required />
+          <input type="password" placeholder="Password" id="Password2" required />
+          <p class="forget">Forgot Your Password?</p>
+          <button type="submit" class="continue-btn" id="continue2">Continue</button>
+          <p>Don't have an account? <button class="switch-btn">Sign up</button></p>
+        </form>
+        <p class="message"></p>
+      </div>
+
+      <!-- Sign In Form -->
+      <div class="form-container signIn hidden" id="signInForm">
+        <h1 class="heading">Sign Up</h1>
+        <div class="social-icons">
+          <img src="../Images/Google.png" alt="Google" />
+          <img src="../Images/instagram.png" alt="Instagram" />
+          <img src="../Images/facebook.png" alt="Facebook" />
+          <img src="../Images/linkedin.png" alt="LinkedIn" />
+          <img src="../Images/twitter.png" alt="Twitter" />
+        </div>
+        <form id="signInForm">
+          <input type="text" placeholder="Username" id="Username" required />
+          <input type="email" placeholder="Email" id="Email" required />
+          <input type="password" placeholder="Password" id="Password" required />
+          <p class="forget">Forgot Your Password?</p>
+          <button type="submit" class="continue-btn" id="continue1">Continue</button>
+          <p>Already have an account? <button class="switch-btn">Log in</button></p>
+        </form>
+        <p class="message"></p>
+      </div>
+    </div>
+    <script src="log-in.js"></script>
+  </body>
+</html>

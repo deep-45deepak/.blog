@@ -10,4 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("S2").classList.toggle("bg-white");
     });
 
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+
 });
+
+
